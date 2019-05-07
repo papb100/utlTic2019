@@ -1,6 +1,6 @@
 function salir(){
     //Formulario llenado al 100%
-    alertify.confirm('Importante!!','Una vez finalizada la captura de informacion , ya no podrás realizar ningun cambio a los datos introduccidos , sin embargo una vez generado el usuario para ingresar al sistema SYSACAD , dentro de el podras realizar los cambios en tu información personal \n ¿Estas seguro de finalizar la captura de tus datos?' , function()
+    alertify.confirm('Salir del Sistema','Estas apunto de salir del sistema \n ¿Estas seguro de realizar esta acción?' , function()
         { 
           alertify.alert()
             .setting({
