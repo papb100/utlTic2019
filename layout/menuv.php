@@ -8,7 +8,7 @@
 							<a href="../mPersonas/index.php"><i class="fas fa-user-tie"></i> Personas</a>
 						</li>
 						<li class="list-unstyled">
-							<a href="" ><i class="fas fa-user-graduate"></i> Alumnos </a>
+							<a href="../mAlumnos/index.php" ><i class="fas fa-user-graduate"></i> Alumnos </a>
 						</li >
 						<li class="list-unstyled">
 							<a href=""><i class="fas fa-running"></i> Carreras</a>
