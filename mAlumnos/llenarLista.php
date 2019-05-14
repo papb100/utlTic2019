@@ -90,7 +90,7 @@ $consulta=mysql_query("SELECT
 				                          </button>
 				                        </td>
 				                        <td>
-											<input  data-size="small" data-style="android" value="<?php echo "$valor"; ?>" type="checkbox" <?php echo "$checado"; ?>  id="<?php echo "interruptor".$n; ?>"  data-toggle="toggle" data-on="Desactivar" data-off="Activar" data-onstyle="danger" data-offstyle="success" class="interruptor" data-width="100" onchange="status(<?php echo $n; ?>,<?php echo $idPersona; ?>);">
+											<input  data-size="small" data-style="android" value="<?php echo "$valor"; ?>" type="checkbox" <?php echo "$checado"; ?>  id="<?php echo "interruptor".$n; ?>"  data-toggle="toggle" data-on="Desactivar" data-off="Activar" data-onstyle="danger" data-offstyle="success" class="interruptor" data-width="100" onchange="status(<?php echo $n; ?>,<?php echo $idAlumno; ?>);">
 				                        </td>
 				                      </tr>
 				                      <?php
@@ -152,7 +152,7 @@ $consulta=mysql_query("SELECT
                               }
                           },
                          {
-                              text: 'Nueva Persona',
+                              text: 'Nuevo Alumno',
                               action: function (  ) {
                                       ver_alta();
                               },
