@@ -20,7 +20,7 @@ $consulta=mysql_query("SELECT
 							ap_paterno,
 							ap_materno
 						FROM
-							personas",$conexion) or die (mysql_error());
+							personas ORDER BY id_persona DESC",$conexion) or die (mysql_error());
 // $row=mysql_fetch_row($consulta)
  ?>
 				            <div class="table-responsive">
