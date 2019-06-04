@@ -170,8 +170,6 @@ $("#image").fileinput({
 		overwriteInitial: false,
 		maxFileSize: 1000,
 		maxFilesNum: 10
-
-
 });
 
 </script>
