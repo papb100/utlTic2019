@@ -76,7 +76,6 @@ $("#frmIngreso").submit(function(e){
                   case 2 :
                         cambioContra();
                         $("#usuario").val(usuario);
-
                     break;
               }
 
@@ -102,21 +101,27 @@ function evaluarCheck(valor){
    
 }
 
-function cancelar(){
-        // console.log("Saliendo del sistema...")
-        alertify.confirm('alert').set({transition:'zoom',message: 'Transition effect: zoom'}).show();
-        alertify.confirm(
-            'Sistema de Registro de Alumnos', 
-            '¿ Deseas cancelar el cambio de contraseña?', 
-            function(){ 
-                $("#cuerpo").fadeIn();
-                $("#cambiarContra").hide('low'); 
-                $("#frmIngreso")[0].reset();   
-                $("#frmCambiar")[0].reset();    
-                $("#username").focus();      
-                }, 
-            function(){ 
-                    alertify.error('Cancelar') ; 
-                    console.log('cancelado')}
-        ).set('labels',{ok:'Si',cancel:'No'});
+function cancelar() {
+  // console.log("Saliendo del sistema...")
+  alertify
+    .confirm("alert")
+    .set({ transition: "zoom", message: "Transition effect: zoom" })
+    .show();
+  alertify
+    .confirm(
+      "Sistema de Registro de Alumnos",
+      "¿ Deseas cancelar el cambio de contraseña?",
+      function() {
+        $("#cuerpo").fadeIn();
+        $("#cambiarContra").hide("low");
+        $("#frmIngreso")[0].reset();
+        $("#frmCambiar")[0].reset();
+        $("#username").focus();
+      },
+      function() {
+        alertify.error("Cancelar");
+        console.log("cancelado");
+      }
+    )
+    .set("labels", { ok: "Si", cancel: "No" });
 }
